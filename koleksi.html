@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakas Bakas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" href="Logo PNG-03.ico" type="image/ico">
+    <link rel="stylesheet" href="koleksi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Header & Navigasi -->
+<header>
+    <div class="logo">
+        <img src="Logo PNG-03.png" alt="Logo Bakas" class="logo-img">
+        BAKAS <span>BAKAS</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="koleksi.html">Koleksi</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Produk Grid -->
+<section id="produk" class="products">
+    <div class="product-grid" id="productGrid">
+
+        <!-- Produk 1 -->
+        <div class="product-thumb" onclick="openDetail(products[0])">
+            <img src="baju1.jpg" alt="Baju Satu">
+            <div class="thumb-info">
+                <div class="thumb-name">Baju Satu</div>
+                <div class="thumb-price">
+                    Rp 349.000
+                    <span class="thumb-old-price">Rp 450.000</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="product-thumb" onclick="openDetail(products[1])">
+            <img src="baju1.jpg" alt="Baju Dua">
+            <div class="thumb-info">
+                <div class="thumb-name">Baju Dua</div>
+                <div class="thumb-price">Rp 399.000</div>
+            </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="product-thumb" onclick="openDetail(products[2])">
+            <img src="baju1.jpg" alt="Baju Tiga">
+            <div class="thumb-info">
+                <div class="thumb-name">Baju Tiga</div>
+                <div class="thumb-price">Rp 549.000</div>
+            </div>
+        </div>
+
+        <!-- Tambah produk -->
+
+    </div>
+</section>
+
+<!-- ===== HALAMAN DETAIL PRODUK (Full Screen Overlay) ===== -->
+<div class="detail-overlay" id="detailOverlay">
+
+    <!-- Sticky Header -->
+    <div class="dp-header">
+        <button class="dp-back" onclick="closeDetail()">&#8592;</button>
+        <span class="dp-header-title" id="dpHeaderTitle"></span>
+    </div>
+
+    <!-- Layout wrapper (flex di desktop) -->
+    <div class="dp-layout">
+
+        <!-- Carousel Foto -->
+        <div class="dp-carousel">
+            <div class="dp-track" id="dpTrack"></div>
+            <button class="dp-cbtn dp-cprev" id="dpPrev">&#8249;</button>
+            <button class="dp-cbtn dp-cnext" id="dpNext">&#8250;</button>
+            <div class="dp-cdots" id="dpDots"></div>
+        </div>
+
+        <!-- Info & Order -->
+        <div class="dp-body">
+            <h2 class="dp-name" id="dpName"></h2>
+            <div class="dp-price-wrap">
+                <span class="dp-price" id="dpPrice"></span>
+                <span class="dp-old-price" id="dpOldPrice"></span>
+            </div>
+            <p class="dp-desc" id="dpDesc"></p>
+
+            <hr class="dp-sep">
+
+            <p class="opt-lbl">Warna</p>
+            <div class="color-options" id="dpColors"></div>
+
+            <p class="opt-lbl">Ukuran</p>
+            <div class="size-options" id="dpSizes"></div>
+
+            <p class="opt-lbl">Jumlah</p>
+            <div class="qty-row">
+                <button class="qty-btn" id="qtyMinus">&#8722;</button>
+                <span class="qty-val" id="qtyVal">1</span>
+                <button class="qty-btn" id="qtyPlus">&#43;</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Sticky Footer Tombol Pesan (muncul saat detail terbuka) -->
+<div class="dp-footer" id="dpFooter">
+    <button class="btn-wa" id="btnWa">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.845L0 24l6.335-1.508A11.947 11.947 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.366l-.359-.213-3.72.885.937-3.619-.234-.372A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+        </svg>
+        Pesan via WhatsApp
+    </button>
+</div>
+
+<footer>
+    <p>&copy; 2024 Bakas Bakas. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="sistem.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>
