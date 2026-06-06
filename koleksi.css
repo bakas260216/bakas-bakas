@@ -1,5 +1,14 @@
-1.6;
-    background: #F7F7F7; /* Mengikuti tone background bersih */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50; /* Warna teks utama abu-abu gelap agar kontras dengan background putih */
+    line-height: 1.6;
+    background: #fdfdfd; /* Warna putih bersih modern */
 }  
 
 /* ===== HEADER ===== */
@@ -7,11 +16,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%; /* Menambah sedikit ruang vertikal */
-    background: rgba(255, 255, 255, 0.85); /* Efek blur kaca transparan agar menyatu dengan background */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 5%;
+    background: rgba(255, 255, 255, 0.9); /* Latar belakang header putih solid transparan */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid #eaeaea; /* Garis pembatas tipis agar header terlihat jelas */
     position: fixed;
     top: 0;
     left: 0;
@@ -26,7 +35,7 @@ header {
     font-weight: bold;
     font-size: 22px;
     letter-spacing: 2px;
-    color: #2C3E50; /* Menyelaraskan warna teks utama */
+    color: #111111; /* Logo hitam tegas */
 }
 
 .logo-img {
@@ -34,6 +43,306 @@ header {
     height: 55px;
     object-fit: contain;
     margin-right: 8px;
+}
+
+.logo span {
+    font-weight: 300;
+    color: #666666;  
+}
+
+/* Navbar */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333; /* Menu navigasi gelap agar terbaca jelas */ 
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c0392b; /* Warna merah saat di-hover */  
+}
+
+/* Bagian pembungkus grid produk utama */
+.products {
+    min-height: 100vh;
+    padding-top: 100px; /* Jarak agar tidak tertutup header fixed */
+    padding-bottom: 40px;
+    background: #f9f9f9; /* Background abu-abu sangat muda agar kartu produk putih di atasnya terlihat pop-out */
+}
+
+/* RESPONSIVE GRID */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .product-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Thumbnail produk (Kartu Produk) */
+.product-thumb {
+    background: #ffffff; /* Kartu produk putih bersih */
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #e2e8f0; /* Garis border abu-abu tipis agar kartu tidak menyatu dengan background */
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02); /* Shadow sangat halus */
+}
+
+.product-thumb:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* Efek timbul saat di-hover */
+}
+
+.product-thumb img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.thumb-info {
+    padding: 12px;
+}
+
+.thumb-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333333; /* Teks nama produk gelap */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.thumb-price {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #c0392b; /* Harga merah agar mencolok */
+    margin-top: 4px;
+}
+
+.thumb-old-price {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: #999999;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+/* ===== HALAMAN DETAIL PRODUK ===== */
+.detail-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.detail-overlay.open {
+    display: block;
+    animation: slideUp 0.25s ease;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+}
+
+.dp-header {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 10;
+}
+
+.dp-back {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333333;
+}
+
+.dp-header-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+}
+
+@media (min-width: 768px) {
+    .dp-layout {
+        display: flex;
+        align-items: flex-start;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .dp-carousel {
+        flex: 1;
+        position: sticky;
+        top: 53px;
+    }
+    .dp-body {
+        flex: 1;
+        padding: 24px 28px 100px;
+    }
+}
+
+.dp-carousel {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+.dp-track img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dp-body {
+    padding: 20px 16px 110px;
+}
+
+.dp-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.dp-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #c0392b;
+}
+
+.dp-desc {
+    font-size: 0.85rem;
+    color: #555555;
+    line-height: 1.8;
+}
+
+.opt-lbl {
+    font-size: 0.75rem;
+    color: #666666;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.color-btn, .size-btn {
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    color: #333333;
+    cursor: pointer;
+}
+
+.color-btn.active, .size-btn.active {
+    background: #111111;
+    color: #ffffff;
+    border-color: #111111;
+}
+
+.qty-btn {
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    color: #333333;
+}
+
+/* Sticky footer tombol pesan */
+.dp-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+    padding: 10px 16px;
+    display: none;
+    z-index: 10000;
+}
+
+.dp-footer.visible {
+    display: flex;
+}
+
+.btn-wa {
+    flex: 1;
+    padding: 14px;
+    background: #25D366; /* Hijau WhatsApp standar yang kontras */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+/* ===== RESPONSIVE HEADER ===== */
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+        padding: 10px 5%;
+    }
+    nav ul li {
+        margin: 0 8px;
+    }
+}
 }
 
 .logo span {
