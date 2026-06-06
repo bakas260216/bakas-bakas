@@ -6,7 +6,8 @@ font-family:Montserrat,sans-serif;
 }
 
 body{
-background:#faf9f7;
+ background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url("background2.jpg");
 color:#222;
 }
 
