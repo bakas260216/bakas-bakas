@@ -9,7 +9,7 @@ body {
     color: #333;
     line-height: 1.6;
     background: #f5f5f5;
-}  
+}
 
 /* ===== HEADER ===== */
 header {
@@ -19,8 +19,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background: transparent;
-    border-bottom: none;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +36,7 @@ header {
     font-weight: bold;
     font-size: 22px;
     letter-spacing: 2px;
-    color: #000;
+    color: #1f1f1f;
 }
 
 .logo-img {
@@ -46,11 +47,12 @@ header {
 }
 
 .logo span {
+    color: #444;
     font-weight: 300;
-    color: #000;  
 }
 
 /* Navbar */
+
 nav ul {
     display: flex;
     list-style: none;
@@ -62,14 +64,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;  
-    font-size: 0.9rem;
-    font-weight: 500;
+    color: #222;
+    font-size: 0.95rem;
+    font-weight: 600;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #555;   
+    color: #8A6A44;
 }
 
 .products {
@@ -133,23 +135,17 @@ nav ul li a:hover {
 }
 
 /* Thumbnail produk */
-.product-thumb {
-    background: #fff;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-left: 10px;
-    border-radius: 8px;
-    overflow: hidden;
-    cursor: pointer;
-    border: 1px solid #ebebeb;
-    transition: transform 0.18s, box-shadow 0.18s;
-    position: relative;
+.product-thumb{
+    background:#ffffff;
+    border-radius:12px;
+    border:none;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
-.product-thumb:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.09);
+.product-thumb:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
 .product-thumb img {
@@ -163,20 +159,18 @@ nav ul li a:hover {
     padding: 7px 9px 10px;
 }
 
-.thumb-name {
-    font-size: 0.77rem;
-    font-weight: 500;
-    color: #333;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.thumb-name{
+    color:#222;
+    font-weight:600;
 }
 
-.thumb-price {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: #c0392b;
-    margin-top: 3px;
+.thumb-price{
+    color:#111;
+    font-weight:700;
+}
+
+.thumb-old-price{
+    color:#888;
 }
 
 .thumb-old-price {
@@ -513,14 +507,12 @@ nav ul li a:hover {
 
 
 
-/* ===== FOOTER ===== */
-footer {
-    text-align: center;
-    padding: 40px;
-    background: #f9f9f9;
-    border-top: 1px solid #eee;
-    font-size: 0.8rem;
-    color: #888;
+footer{
+    text-align:center;
+    padding:40px;
+    background:#ECE9E4;
+    color:#555;
+    border-top:none;
 }
 
 /* ===== RESPONSIVE HEADER ===== */
