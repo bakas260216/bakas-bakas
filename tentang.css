@@ -129,43 +129,33 @@ color:#555;
 /* Sosial */
 
 .sosial{
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-margin-bottom:80px;
-
-flex-wrap:wrap;
-
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:50px 0;
 }
 
 .sosial a{
-
-text-decoration:none;
-
-padding:15px 25px;
-
-background:#0f3460;
-
-color:white;
-
-border-radius:30px;
-
-transition:.3s;
-
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
 }
 
-.sosial a:hover{
-
-background:#e94560;
-
-transform:translateY(-5px);
-
+.sosial img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+    margin-bottom:8px;
+    transition:0.3s;
 }
 
+.sosial img:hover{
+    transform:scale(1.1);
+}
 /* Team */
 
 .team{
