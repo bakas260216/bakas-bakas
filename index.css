@@ -64,7 +64,7 @@ nav ul li a {
 .hero {
     min-height: calc(100vh - 80px);
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                url("backgroundfiks.jpg");
+                url("Backroundfiks2.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
