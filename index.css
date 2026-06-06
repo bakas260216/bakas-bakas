@@ -63,8 +63,7 @@ nav ul li a {
 /* ===== HERO ===== */
 .hero {
     min-height: calc(100vh - 80px);
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                url("Backroundfiks2.jpg");
+    background: url("Backroundfiks2.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -81,7 +80,7 @@ nav ul li a {
 }
 
 .hero-text p {
-    font-size: 4px;
+    font-size: 2px;
     font-weight: 300;
 }
 
