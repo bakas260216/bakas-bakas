@@ -25,7 +25,7 @@ top: 0;
 z-index: 100;
 }
 
-.logo {
+.logo-img{
 display: flex;
 align-items: center;
 font-weight: bold;
