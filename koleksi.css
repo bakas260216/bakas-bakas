@@ -81,14 +81,10 @@ Desktop (≥1024px)  : 4 kolom
 Lebar (≥1400px)    : 5 kolom
 */
 
-.product-grid{
-    width:100%;
-    max-width:1200px;
-    margin:0 auto;
-    padding:20px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:16px;
+.product-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 8px;
 }
 
 @media (min-width: 480px) {
@@ -519,4 +515,5 @@ nav ul li {
     margin: 0 10px;  
 }
 
-}
+    }
+    
