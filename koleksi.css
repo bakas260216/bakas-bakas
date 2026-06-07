@@ -1,3 +1,5 @@
+
+
 *{
 margin: 0;
 padding: 0;
@@ -61,7 +63,8 @@ font-size: 0.9rem;
 font-weight: 400;
 }
 
-.products {
+/* ===== HERO ===== */
+.hero {
 min-height: calc(100vh - 80px);
 background: url("Backroundfiks2.jpg");
 background-size: cover;
@@ -73,6 +76,48 @@ text-align: center;
 color: #fff;
 }
 
+.hero-text h2 {
+font-size: 3.5rem;
+margin-bottom: 10px;
+letter-spacing: 5px;
+}
+
+.hero-text p {
+font-size: 12px;
+font-weight: 300;
+}
+
+.btn {
+display: inline-block;
+margin-top: 20px;
+padding: 12px 30px;
+background: #fff;
+color: #000;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+transition: 0.3s;
+}
+
+.btn:hover {
+background: #000;
+color: #fff;
+}
+
+/* ===== PRODUK SECTION ===== */
+.products {
+padding: 30px 3%;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 20px;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 0.85rem;
+color: #555;
+}
+
 /* RESPONSIVE GRID:
 HP kecil (<480px)  : 2 kolom
 HP besar (≥480px)  : 2 kolom, gap lebih besar
@@ -80,7 +125,6 @@ Tablet (≥768px)    : 3 kolom
 Desktop (≥1024px)  : 4 kolom
 Lebar (≥1400px)    : 5 kolom
 */
-
 .product-grid {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
@@ -116,10 +160,6 @@ grid-template-columns: repeat(5, 1fr);
 /* Thumbnail produk */
 .product-thumb {
 background: #fff;
-margin-top: 20px;
-margin-bottom: 20px;
-margin-left: 10px;
-margin-left: 10px;
 border-radius: 8px;
 overflow: hidden;
 cursor: pointer;
@@ -233,15 +273,15 @@ max-width: 1100px;
 margin: 0 auto;
 }
 
-.dp-carousel {  
-    flex: 1;  
-    position: sticky;  
-    top: 53px;  
-}  
-
-.dp-body {  
-    flex: 1;  
-    padding: 24px 28px 100px;  
+.dp-carousel {      
+    flex: 1;      
+    position: sticky;      
+    top: 53px;      
+}      
+  
+.dp-body {      
+    flex: 1;      
+    padding: 24px 28px 100px;      
 }
 
 }
@@ -492,10 +532,10 @@ letter-spacing: 0.3px;
 /* ===== FOOTER ===== */
 footer {
 text-align: center;
-padding: 40px;
+padding: 15px;
 background: #f9f9f9;
 border-top: 1px solid #eee;
-font-size: 0.8rem;
+font-size: 0.75rem;
 color: #888;
 }
 
@@ -507,12 +547,12 @@ gap: 8px;
 padding: 10px 4%;
 }
 
-.hero-text h2 {  
-    font-size: 2rem;  
-}  
-
-nav ul li {  
-    margin: 0 10px;  
+.hero-text h2 {      
+    font-size: 2rem;      
+}      
+  
+nav ul li {      
+    margin: 0 10px;      
 }
 
 }
