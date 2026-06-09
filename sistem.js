@@ -3,32 +3,40 @@
 // images: array path foto produk (bisa 1, 2, 3, atau lebih)
 const products = [
     {
-        name: "Baju Satu",
-        price: "Rp 349.000",
-        oldPrice: "Rp 450.000",
-        desc: "Kemeja kasual pria bahan katun premium. Nyaman dipakai sehari-hari maupun untuk acara santai. Material breathable membuat kulit tetap segar sepanjang hari.",
-        images: ["baju1.jpg", "baju2.jpg", "baju3.jpg"],
-        colors: ["Merah", "Biru", "Kuning", "Hitam"],
+        name: "vintae custos short sleeve",
+        price: "Rp 139.000",
+        oldPrice: null,
+        images: ["desain baju 1 pendek putih.png", "desain baju 1 pendek hitam.png",],
+        colors: ["putih", "Hitam"],
         sizes: ["S", "M", "L", "XL"]
     },
     {
-        name: "Baju Dua",
-        price: "Rp 399.000",
+        name: "vintae custos short sleeve",
+        price: "Rp 139.000",
         oldPrice: null,
-        desc: "Polo shirt elegan dengan bordir logo khas Bakas Bakas. Bahan pique berkualitas tinggi memberikan kesan rapi dan profesional untuk berbagai kesempatan.",
-        images: ["baju1.jpg", "baju2.jpg", "baju3.jpg"],
-        colors: ["Merah", "Biru", "Hitam"],
+        images: ["desain baju 2 pendek putih.png", "desain baju 2 pendek hitam.png"],
+        colors: ["putih", "Hitam"],
         sizes: ["S", "M", "L", "XL"]
     },
     {
-        name: "Baju Tiga",
-        price: "Rp 549.000",
+        name: "vintae custos long sleeve",
+        price: "Rp 149.000",
         oldPrice: null,
-        desc: "Jaket outer pria dengan bahan water-resistant berkualitas. Desain modern cocok untuk kegiatan outdoor maupun tampilan urban sehari-hari.",
-        images: ["baju1.jpg", "baju2.jpg", "baju3.jpg"],
-        colors: ["Kuning", "Hitam", "Biru"],
-        sizes: ["M", "L", "XL"]
+        images: ["desain baju 1 panjang putihh.png", "desain baju 1 panjang hitam.png"],
+        colors: ["putih", "Hitam"],
+        sizes: ["s","M", "L", "XL"]
+    },
+    {
+        name: "vintae custos long sleeve",
+        price: "Rp 149.000",
+        oldPrice: null,
+        images: ["desain baju 2 panjang putih.png", "desain baju 2 panjang hitam.png"],
+        colors: ["putih", "Hitam"],
+        sizes: ["s","M", "L", "XL"]
     }
+
+
+    
 ];
 
 // ===== STATE =====
