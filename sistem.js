@@ -8,7 +8,7 @@ const products = [
         oldPrice: null,
         images: ["desain baju 1 pendek putih.png", "desain baju 1 pendek hitam.png",],
         colors: ["putih", "Hitam"],
-        sizes: ["S", "M", "L", "XL"]
+        sizes: ["M", "L", "XL","XXL","XXXL"]
     },
     {
         name: "vintae custos short sleeve",
@@ -16,7 +16,7 @@ const products = [
         oldPrice: null,
         images: ["desain baju 2 pendek putih.png", "desain baju 2 pendek hitam.png"],
         colors: ["putih", "Hitam"],
-        sizes: ["S", "M", "L", "XL"]
+        sizes: ["M", "L", "XL","XXL","XXXL"]
     },
     {
         name: "vintae custos long sleeve",
@@ -24,7 +24,7 @@ const products = [
         oldPrice: null,
         images: ["desain baju 1 panjang putihh.png", "desain baju 1 panjang hitam.png"],
         colors: ["putih", "Hitam"],
-        sizes: ["s","M", "L", "XL"]
+        sizes: ["M", "L", "XL","XXL","XXXL"]
     },
     {
         name: "vintae custos long sleeve",
@@ -32,7 +32,7 @@ const products = [
         oldPrice: null,
         images: ["desain baju 2 panjang putih.png", "desain baju 2 panjang hitam.png"],
         colors: ["putih", "Hitam"],
-        sizes: ["s","M", "L", "XL"]
+        sizes: ["M", "L", "XL","XXL","XXXL"]
     }
 
 
