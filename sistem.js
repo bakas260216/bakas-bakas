@@ -5,20 +5,20 @@ const products = [
     {
         name: "vintae custos short sleeve",
         price: "Rp 139.000",
-        desc:"PRE-ORDER",
+        desc: `PRE-ORDER
 
-"VITAE CUSTOS terinspirasi oleh nilai kepedulian, dedikasi, dan karakter. Sebuah desain yang merepresentasikan tanggung jawab terhadap apa yang kita jaga, apa yang kita perjuangkan, dan siapa diri kita dalam setiap proses kehidupan",.
+VITAE CUSTOS terinspirasi oleh nilai kepedulian, dedikasi, dan karakter. Sebuah desain yang merepresentasikan tanggung jawab terhadap apa yang kita jaga, apa yang kita perjuangkan, dan siapa diri kita dalam setiap proses kehidupan.
 
-"For Those Who Choose to Care.",
+For Those Who Choose to Care.
 
-"• Cotton Combed 24s",
-"• Plastisol Ink",
-"• Free Sticker",
-"• Premium Packaging",
+• Cotton Combed 24s
+• Plastisol Ink
+• Free Sticker
+• Premium Packaging
 
-"• DP Minimal 50%",
-"• Belum termasuk ongkos kirim",
-"• Estimasi produksi ±14 hari kerja setelah periode pre-order berakhir.",
+• DP Minimal 50%
+• Belum termasuk ongkos kirim
+• Estimasi produksi ±14 hari kerja setelah periode pre-order berakhir.`,
         oldPrice: null,
         images: ["desain baju 1 pendek putih.png","desain baju 2 pendek putih.png",
                  "desain baju 1 pendek hitam.png","desain baju 2 pendek hitam.png"],
@@ -29,6 +29,20 @@ const products = [
     {
         name: "vintae custos long sleeve",
         price: "Rp 149.000",
+        desc: `PRE-ORDER
+
+VITAE CUSTOS terinspirasi oleh nilai kepedulian, dedikasi, dan karakter. Sebuah desain yang merepresentasikan tanggung jawab terhadap apa yang kita jaga, apa yang kita perjuangkan, dan siapa diri kita dalam setiap proses kehidupan.
+
+For Those Who Choose to Care.
+
+• Cotton Combed 24s
+• Plastisol Ink
+• Free Sticker
+• Premium Packaging
+
+• DP Minimal 50%
+• Belum termasuk ongkos kirim
+• Estimasi produksi ±14 hari kerja setelah periode pre-order berakhir.`,
         oldPrice: null,
         images: ["desain baju 1 panjang putihh.png","desain baju 2 panjang putih.png", 
                  "desain baju 1 panjang hitam.png","desain baju 2 panjang hitam.png"],
