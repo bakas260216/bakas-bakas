@@ -43,7 +43,7 @@ For Those Who Choose to Care.
 • Belum termasuk ongkos kirim
 • Estimasi produksi ±14 hari kerja setelah periode pre-order berakhir.`,
         oldPrice: null,
-        images: ["desain baju 1 panjang putih.png","desain baju 2 panjang putih.png", 
+        images: ["desain baju 1 panjang putihh.png","desain baju 2 panjang putih.png", 
                  "desain baju 1 panjang hitam.png","desain baju 2 panjang hitam.png"],
         colors: ["putih", "hitam"],
         sizes: ["M", "L", "XL","XXL","XXXL"]
