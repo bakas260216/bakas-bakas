@@ -25,7 +25,7 @@ For Those Who Choose to Care.
         sizes: ["M", "L", "XL","XXL","XXXL"]
     },
     {
-        name: "VITAE CUSTOS — Short Sleeve",
+        name: "VITAE CUSTOS — Long Sleeve",
         price: "Rp 149.000",
         desc: `PRE-ORDER
 
