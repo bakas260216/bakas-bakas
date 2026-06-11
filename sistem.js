@@ -74,7 +74,8 @@ function openDetail(p) {
     oldPriceEl.textContent = p.oldPrice || "";
 
     // Isi deskripsi
-    document.getElementById("dpDesc").textContent = p.desc;
+    document.getElementById("dpDesc").innerHTML =
+    p.desc.replace(/\n/g, "<br>");
 
     // Isi qty
     document.getElementById("qtyVal").textContent = 1;
