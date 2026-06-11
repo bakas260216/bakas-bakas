@@ -3,7 +3,7 @@
 // images: array path foto produk (bisa 1, 2, 3, atau lebih)
 const products = [
     {
-        name: "vitae custos short sleeve",
+        name: "VITAE CUSTOS — Short Sleeve",
         price: "Rp 139.000",
         desc: `PRE-ORDER
 
@@ -20,13 +20,12 @@ For Those Who Choose to Care.
 • Belum termasuk ongkos kirim
 • Estimasi produksi ±14 hari kerja setelah periode pre-order berakhir.`,
         oldPrice: null,
-        images: ["desain baju 1 pendek putih.png","desain baju 2 pendek putih.png",
-                 "desain baju 1 pendek hitam.png","desain baju 2 pendek hitam.png"],
-        colors: ["putih", "hitam"],
+        images: ["baju 1 pendek putih.png","baju 1 pendek hitam.png","SIZE CHART.png"],
+        colors: ["Putih", "Hitam"],
         sizes: ["M", "L", "XL","XXL","XXXL"]
     },
     {
-        name: "vitae custos long sleeve",
+        name: "VITAE CUSTOS — Short Sleeve",
         price: "Rp 149.000",
         desc: `PRE-ORDER
 
@@ -43,9 +42,8 @@ For Those Who Choose to Care.
 • Belum termasuk ongkos kirim
 • Estimasi produksi ±14 hari kerja setelah periode pre-order berakhir.`,
         oldPrice: null,
-        images: ["desain baju 1 panjang putihh.png","desain baju 2 panjang putih.png", 
-                 "desain baju 1 panjang hitam.png","desain baju 2 panjang hitam.png"],
-        colors: ["putih", "hitam"],
+        images: ["baju 1 panjang putih.png","baju 1 panjang hitam.png","SIZE CHART.png"],
+        colors: ["Putih", "Hitam"],
         sizes: ["M", "L", "XL","XXL","XXXL"]
     }
 ];
