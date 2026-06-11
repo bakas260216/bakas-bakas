@@ -351,6 +351,10 @@ line-height: 1.8;
 margin-bottom: 0;
 }
 
+#dpDesc {
+    white-space: pre-line;
+}
+
 .dp-sep {
 border: none;
 border-top: 1px solid #f0f0f0;
