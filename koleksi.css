@@ -351,8 +351,8 @@ line-height: 1.8;
 margin-bottom: 0;
 }
 
-#dpDesc {
-    white-space: pre-line;
+#dpdesc {
+    white-space: pre-wrap;
 }
 
 .dp-sep {
