@@ -45,6 +45,35 @@ For Those Who Choose to Care.
         images: ["baju 1 panjang putih.png","baju 1 panjang hitam.png","SIZE CHART.png"],
         colors: ["Putih", "Hitam"],
         sizes: ["M", "L", "XL","XXL","XXXL"]
+    },
+    const products = [
+    {
+        name: "HEREDITAS",
+        price: "Rp 139.000",
+        desc: `HEREDITAS
+
+Carry the Story Forward.
+
+HEREDITAS merupakan koleksi kedua dari BAKAS yang lahir dari kisah yang terus hidup dan diterjemahkan ke dalam streetwear modern.
+
+Melalui koleksi ini, BAKAS mengangkat inspirasi dari warisan budaya sebagai bentuk apresiasi terhadap cerita, identitas, dan nilai yang terus diwariskan dari generasi ke generasi. Setiap elemen dirancang bukan hanya untuk dikenakan, tetapi juga sebagai pengingat bahwa setiap cerita memiliki makna dan layak untuk diteruskan.
+
+Product Details
+
+* Cotton Combed 24s
+* Plastisol Ink
+* Free Sticker
+* Premium Packaging
+
+Production Information
+
+* DP Minimal 50%
+* Belum termasuk ongkos kirim.
+* Estimasi produksi ±14 hari kerja setelah periode pre-order berakhir.`,
+        oldPrice: null,
+        images: ["baju 2 pendek putih.png","baju 2 pendek hitam.png","baju 2 ukuran.png"],
+        colors: ["Putih", "Hitam"],
+        sizes: ["M", "L", "XL","XXL","XXXL"]
     }
 ];
 
