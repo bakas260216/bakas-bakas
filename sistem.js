@@ -70,7 +70,7 @@ Production Information
 * Belum termasuk ongkos kirim.
 * Estimasi produksi ±14 hari kerja setelah periode pre-order berakhir.`,
         oldPrice: null,
-        images: ["baju 2 pendek putih.png","baju 2 pendek hitam.png","baju 2 ukuran.png"],
+        images: ["baju 2 sampul.png","baju 2 pendek putih.png","baju 2 pendek hitam.png","baju 2 ukuran.png"],
         colors: ["Putih", "Hitam"],
         sizes: ["M", "L", "XL","XXL","XXXL"]
     }
