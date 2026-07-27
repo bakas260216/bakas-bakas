@@ -46,7 +46,6 @@ For Those Who Choose to Care.
         colors: ["Putih", "Hitam"],
         sizes: ["M", "L", "XL","XXL","XXXL"]
     },
-    const products = [
     {
         name: "HEREDITAS",
         price: "Rp 139.000",
