@@ -73,6 +73,36 @@ text-align: center;
 color: #fff;
 }
 
+.product-thumb {
+    position: relative;
+}
+
+.product-thumb.sold-out img {
+    opacity: 0.5;
+}
+
+.sold-out-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.btn-wa.btn-disabled,
+.btn-wa:disabled {
+    background-color: #999 !important;
+    cursor: not-allowed;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
 /* RESPONSIVE GRID:
 HP kecil (<480px)  : 2 kolom
 HP besar (≥480px)  : 2 kolom, gap lebih besar
