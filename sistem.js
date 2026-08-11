@@ -20,9 +20,9 @@ For Those Who Choose to Care.
 • Belum termasuk ongkos kirim
 • Estimasi produksi ±14 hari kerja setelah periode pre-order berakhir.`,
         oldPrice: null,
-        images: ["baju 1 pendek putih.png","baju 1 pendek hitam.png","SIZE CHART.png"],
-        colors: ["Putih", "Hitam"],
-        sizes: ["M", "L", "XL","XXL","XXXL"]
+        images: ["baju 1 pendek putih.png","SIZE CHART.png"],
+        colors: ["Putih"],
+        sizes: ["M", "L"]
     },
     {
         name: "VITAE CUSTOS — Long Sleeve",
