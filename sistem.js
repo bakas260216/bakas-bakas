@@ -82,10 +82,10 @@ Production Information
         price: "Rp 139.000",
         desc: "",
         oldPrice: null,
-        images: ["baju 2 sampul.png","baju 2 pendek putih.png","baju 2 pendek hitam.png","baju 2 ukuran.png"],
+        images: ["desain3 pendek hitam.png","desain3 pendek putih.png","background desain3.png"],
         colors: ["Putih", "Hitam"],
         sizes: ["S","M", "L", "XL","XXL","XXXL"],
-        soldOut: true
+        soldOut: false
 }
 ];
 
