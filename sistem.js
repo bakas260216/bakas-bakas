@@ -75,8 +75,18 @@ Production Information
         images: ["baju 2 sampul.png","baju 2 pendek putih.png","baju 2 pendek hitam.png","baju 2 ukuran.png"],
         colors: ["Putih", "Hitam"],
         sizes: ["M", "L", "XL","XXL","XXXL"],
-        soldOut: false
-    }
+        soldOut: true
+    },
+    {
+        name: "vol-3",
+        price: "Rp 139.000",
+        desc: "",
+        oldPrice: null,
+        images: ["baju 2 sampul.png","baju 2 pendek putih.png","baju 2 pendek hitam.png","baju 2 ukuran.png"],
+        colors: ["Putih", "Hitam"],
+        sizes: ["S","M", "L", "XL","XXL","XXXL"],
+        soldOut: true
+}
 ];
 
 // ===== STATE =====
