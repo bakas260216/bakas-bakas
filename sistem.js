@@ -83,7 +83,7 @@ Production Information
         desc: "",
         oldPrice: null,
         images: ["desain3 pendek hitam.png","desain3 pendek putih.png","background desain3.PNG"],
-        colors: ["Putih", "Abu-abu"],
+        colors: ["Putih", "Abu abu"],
         sizes: ["S","M", "L", "XL","XXL","XXXL"],
         soldOut: false
 }
